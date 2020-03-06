@@ -23,7 +23,7 @@ server.app.use('/user', userRoutes);
 server.app.use('/posts', postRoutes);
 
 //conectar DB
-mongoose.connect('mongodb://localhost:27017/fotosgram',
+mongoose.connect('mongodb+srv://MarcoPQ27:ferrari22@cluster0-jdiyl.mongodb.net/test?retryWrites=true&w=majority',
     {useNewUrlParser: true, useCreateIndex: true}, (err)=>{
         if (err)throw err;
         console.log('base de datos online');
